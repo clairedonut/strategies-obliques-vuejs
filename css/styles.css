@@ -1,0 +1,104 @@
+/* @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Questrial|Raleway:200,300,400,500,600'); */
+
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+
+html, body {
+  height: 100% !important;
+  background: #fff;
+  color: #484848;
+
+  /* Backgroud Gradient */
+background-image: -webkit-linear-gradient(bottom left, #e7ff00, #ffc300, #ff7b3f, #ff2083, #ff00c5);
+background-image: -o-linear-gradient(bottom left, #e7ff00, #ffc300, #ff7b3f, #ff2083, #ff00c5);
+background-image: linear-gradient(to top right, #e7ff00, #ffc300, #ff7b3f, #ff2083, #ff00c5);
+}
+
+/* ---------------- #app section - quote generator ---------------- */
+
+#signature {
+  width: 100%;
+  text-align: left;
+  padding: 1em 2em 0;
+
+}
+
+#signature a {
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+}
+
+#signature a:hover {
+  color: #6b0078;
+  text-decoration: none;
+}
+
+main, #app{
+  width: 100%;
+  height: 100%;
+}
+
+#quote h2 {
+  color: #fff;
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 2px 2px purple;
+
+  font-size: 3em;
+  line-height: 1.5em;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#app button {
+  margin: 2em auto;
+  padding: 1em 3em;
+  min-width: 300px;
+  position: fixed;
+  bottom: 0;
+
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: lighter;
+}
+
+/* general properties  */
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* ---------------- media queries ---------------- */
+
+@media only screen and (max-width: 600px) {
+
+  #app button {
+    margin: 0 auto 1.5em;
+    padding: 0.6em 3em;
+    width: 95%;
+  }
+  .hidden-md-down {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 601px) {
+  .hidden-md-up {
+    display: none;
+  }
+}
