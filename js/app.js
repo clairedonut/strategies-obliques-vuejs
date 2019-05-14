@@ -138,23 +138,16 @@ var main = new Vue ({
       'Va jusqu’à un extrême, reviens vers plus de confort',
       'Vers l’insignifiant'
     ],
-    stop: false
-  //   styleQuote: {
-  //     height: '',
-  //     backgroundColor: '',
-  //   }
-  // }
-  // ,
-  // backGradient: {
-  //   backgroundColor: '',
-  // }
+    stop: false,
+    mycolor: '#000000',
 },
   methods: {
-    shuffle: function() {
-      this.quotes = _.shuffle(this.quotes)
-      // this.backGradient = _.shuffle(this.backGradient)
+    shuffle: function(event){
+      this.quotes = _.shuffle(this.quotes),
 
-      // this.images = _.shuffle(this.images)
+      this.mycolor = '-webkit-linear-gradient(bottom left, #'+(Math.random()*0xFFFFFF<<0).toString(16)
+      +', #'+(Math.random()*0xFFFFFF<<0).toString(16)+')'
+      document.body.style.background = this.mycolor
     }
   }
 }) // END VUE
