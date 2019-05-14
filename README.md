@@ -6,4 +6,6 @@ Basées sur le principe de « pensée latérale« , les cartes « stratégies ob
 Cette création de Brian Eno destinée à guider le processus créatif, a influencé de nombreux musiciens, comme Bowie et Coldplay.
 
 
-👉 Version finale [ici](https://clairedonut.github.io/strategies-obliques-vuejs/)
+👉 La version finale du projet est [ici](https://clairedonut.github.io/strategies-obliques-vuejs/)
+
+Une citation est générée de manière aléatoire ainsi qu'un magnifique gradient pour l'arrière plan. (Data and Methods to display a random quote and generate random hex)
